@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Java Script</title>
+    
+    <script>
+        var frutas = [];
+        var continuar = "n";
+        do {
+            var fruta = prompt("Digite uma Fruta: ");
+            frutas.push(fruta);
+            continuar = prompt("Para continuar? Sim (Sim, s, S) ou não para encerrar (n):").toLowerCase();
+        } while (continuar.includes("s"));
+        
+        for(var i=0; i<frutas.length; i++){
+            console.log(frutas[i])
+        }
+    </script>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
